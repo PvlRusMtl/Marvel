@@ -87,7 +87,6 @@ const View = ({char}) => {
     let imgStyle = {'objectFit' : 'cover'};
     if (thumbnail.includes('image_not_available')) {
         imgStyle = {'objectFit': 'contain'};
-        console.log(thumbnail)
     }
 
     return (
