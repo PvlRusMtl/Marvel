@@ -1,4 +1,6 @@
 import { Component } from "react/cjs/react.production.min";
+import PropTypes from 'prop-types';
+
 import AppHeader from "../appHeader/AppHeader";
 import RandomChar from "../randomChar/RandomChar";
 import CharList from "../charList/CharList";
@@ -39,6 +41,10 @@ class App extends Component {
             </div>
         )
     }
+}
+
+CharInfo.propTypes = {
+    charId: PropTypes.number
 }
 
 export default App;
